@@ -52,4 +52,6 @@ Unhandled exception. System.AggregateException: One or more errors occurred. (Se
 
 You are trying to make a request to the Google API from a computer that is not authorized to use my Google API Key. If you want to use it, ask Ian to allow your computers IP address to use the API Key.
 
-> NOTE: Ian will leave the API Key deactivated unless he's using it at the moment. If you want to use this, go ahead and create your own key. The stuff this app does doesn't rack up much cost at all. I should really even be free if you aren't making millions of calls.
+> NOTE: Ian will leave the APIs which are used by this key deactivated unless he's using it at the moment. If you want to use this, go ahead and create your own key. The stuff this app does doesn't rack up much cost at all. I should really even be free if you aren't making millions of calls.
+
+In order to use the key, you need to enable the Geocode API and the Place API for your project.
