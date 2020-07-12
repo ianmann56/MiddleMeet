@@ -33,7 +33,7 @@ This will give you back a new lng/lat coordinate. That is the mid point between 
 
 Then, do a search for places around that new mid point within a reasonable distance.
 
-# Errors:
+# API Key Authorization:
 
 If you ever get an error that looks like this:
 
@@ -51,3 +51,5 @@ Unhandled exception. System.AggregateException: One or more errors occurred. (Se
 ```
 
 You are trying to make a request to the Google API from a computer that is not authorized to use my Google API Key. If you want to use it, ask Ian to allow your computers IP address to use the API Key.
+
+> NOTE: Ian will leave the API Key deactivated unless he's using it at the moment. If you want to use this, go ahead and create your own key. The stuff this app does doesn't rack up much cost at all. I should really even be free if you aren't making millions of calls.
