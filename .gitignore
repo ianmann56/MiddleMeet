@@ -1,0 +1,10 @@
+# Output files
+bin/
+obj/
+output/
+
+# Test run files
+testrun.txt
+
+# VS Code
+.vscode
