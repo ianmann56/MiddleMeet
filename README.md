@@ -32,3 +32,22 @@ https://math.stackexchange.com/a/1599274/721543
 This will give you back a new lng/lat coordinate. That is the mid point between all locations in question.
 
 Then, do a search for places around that new mid point within a reasonable distance.
+
+# Errors:
+
+If you ever get an error that looks like this:
+
+```
+Unhandled exception. System.AggregateException: One or more errors occurred. (Sequence contains no elements)
+ ---> System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at MiddleMeet.Domain.GetPlacesAroundMidPointOfLocationsQuery.Run() in /home/ikirkpat/Personal/MiddleMeet/MiddleMeet.Domain/GetPlacesAroundMidPointOfLocationsQuery.cs:line 50
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at MiddleMeet.DevConsole.Program.Main(String[] args) in /home/ikirkpat/Personal/MiddleMeet/MiddleMeet.DevConsole/Program.cs:line 42
+[1]    27704 abort (core dumped)  dotnet output/MiddleMeet.DevConsole.dll < MiddleMeet.DevConsole/testrun.txt
+```
+
+You are trying to make a request to the Google API from a computer that is not authorized to use my Google API Key. If you want to use it, ask Ian to allow your computers IP address to use the API Key.
